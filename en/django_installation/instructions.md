@@ -1,5 +1,7 @@
+> #### Info
+> 
 > Part of this section is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
-
+> 
 > Part of this section is based on the [django-marcador
 tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons
 Attribution-ShareAlike 4.0 International License. The django-marcador tutorial
@@ -14,7 +16,9 @@ So, let's create a **virtual environment** (also called a *virtualenv*). Virtual
 
 All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows it might look like `C:\Users\Name\` (where `Name` is the name of your login).
 
-> __NOTE:__ On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example `C:\djangogirls`.
+> #### NOTE
+> 
+> On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example `C:\djangogirls`.
 
 For this tutorial we will be using a new directory `djangogirls` from your home directory:
 
@@ -58,8 +62,10 @@ $ python3 -m venv myvenv
 
 `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also good idea to keep the name short as you'll be referencing it a lot!
 
-> __NOTE:__ On some versions of Debian/Ubuntu you may receive the following error:
-
+> #### Note
+> 
+> On some versions of Debian/Ubuntu you may receive the following error:
+> 
 >{% filename %}command-line{% endfilename %}
 >```
 >The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
@@ -73,34 +79,42 @@ $ python3 -m venv myvenv
 >$ sudo apt-get install python3-venv
 >```
 
-> __NOTE:__ On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
+&nbsp;
 
+> #### Note
+> 
+> On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
+> 
 >{% filename %}command-line{% endfilename %}
 >```
 >Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >```
-
+> 
 > To get around this, use the `virtualenv` command instead.
-
+> 
 >{% filename %}command-line{% endfilename %}
 >```
 >$ sudo apt-get install python-virtualenv
 >$ virtualenv --python=python3.5 myvenv
 >```
 
-> __NOTE:__ If you get an error like
+&nbsp;
 
->{% filename %}command-line{% endfilename %}
->```
->E: Unable to locate package python3-venv
->```
-
+> #### Note
+> 
+> If you get an error like
+> 
+> {% filename %}command-line{% endfilename %}
+> ```
+> E: Unable to locate package python3-venv
+> ```
+> 
 > then instead run:
 >
->{% filename %}command-line{% endfilename %}
->```
->sudo apt install python3.5-venv
->```
+> {% filename %}command-line{% endfilename %}
+> ```
+> sudo apt install python3.5-venv
+> ```
 
 <!--endsec-->
 
@@ -118,7 +132,9 @@ Start your virtual environment by running:
 C:\Users\Name\djangogirls> myvenv\Scripts\activate
 ```
 
-> __NOTE:__ on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option.  Then try typing the following command before starting your virtual environment:
+> #### Note
+> 
+> on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option.  Then try typing the following command before starting your virtual environment:
 >
 >{% filename %}command-line{% endfilename %}
 >```
@@ -141,7 +157,9 @@ $ source myvenv/bin/activate
 
 Remember to replace `myvenv` with your chosen `virtualenv` name!
 
-> __NOTE:__ sometimes `source` might not be available. In those cases try doing this instead:
+> #### Note
+> 
+> sometimes `source` might not be available. In those cases try doing this instead:
 >
 >{% filename %}command-line{% endfilename %}
 >```
@@ -181,6 +199,8 @@ Successfully installed django-1.10.4
 <!--sec data-title="Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
+> #### Note
+> 
 > If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
@@ -188,6 +208,8 @@ data-collapse=true ces-->
 <!--sec data-title="Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
+> #### Note
+> 
 > Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
 >
 >{% filename %}command-line{% endfilename %}
@@ -200,6 +222,8 @@ data-collapse=true ces-->
 <!--sec data-title="Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
+> #### Note
+> 
 > If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
 <!--endsec-->

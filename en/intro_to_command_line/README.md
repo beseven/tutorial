@@ -1,6 +1,8 @@
 # Introduction to the command-line interface
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> #### Info::For readers at home
+> 
+> This chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
 It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
@@ -8,7 +10,9 @@ __Let us introduce you to your first new friend: the command line!__
 
 The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> #### Note
+> 
+> Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
 ## What is the command line?
 
@@ -66,7 +70,9 @@ On Windows, it's a `>` sign, like this:
 
 Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> #### Note::Just a small note
+> 
+> In your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
@@ -105,6 +111,8 @@ olasitarska
 
 As you can see, the computer has just printed your username. Neat, huh? :)
 
+> #### Hint
+> 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## Basics
@@ -124,7 +132,9 @@ $ pwd
 /Users/olasitarska
 ```
 
-> Note: 'pwd' stands for 'print working directory'.
+> #### Note
+> 
+> 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -221,7 +231,9 @@ C:\Users\olasitarska\Desktop
 
 Here it is!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` button twice to get a list of options.
+> #### Hint::PRO tip
+> 
+> if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` button twice to get a list of options.
 
 ---
 
@@ -248,7 +260,9 @@ $ mkdir practice
 
 This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> #### Hint::PRO tip
+> 
+> If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 ---
 
@@ -333,7 +347,9 @@ C:\Users\olasitarska\Desktop
 
 Now time to delete the `practice` directory:
 
-> __Attention__: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _the deleted files will be gone forever_! So be very careful with this command.
+> #### Caution::Attention
+> 
+> Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning _the deleted files will be gone forever_! So be very careful with this command.
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
