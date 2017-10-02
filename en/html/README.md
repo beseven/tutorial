@@ -30,6 +30,8 @@ And now create a `post_list.html` file (just leave it blank for now) inside the 
 
 See how your website looks now: http://127.0.0.1:8000/
 
+> #### Info
+> 
 > If you still have an error `TemplateDoesNotExist`, try to restart your server. Go into command line, stop the server by pressing Ctrl+C (Control and C buttons together) and start it again by running a `python manage.py runserver` command.
 
 ![Figure 11.1](images/step1.png)
@@ -168,7 +170,9 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
 $ git add --all .
 ```
 
-> __Note__ `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
+> #### Note
+> 
+> `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
 
 Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
@@ -184,7 +188,9 @@ We're almost there, now it's time to tell it to save this change in its history.
 $ git commit -m "Changed the HTML for the site."
 ```
 
-> __Note__ Make sure you use double quotes around the commit message.
+> #### Note
+> 
+> Make sure you use double quotes around the commit message.
 
 Once we've done that, we upload (push) our changes up to GitHub:
 

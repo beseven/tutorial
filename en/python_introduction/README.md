@@ -1,12 +1,16 @@
 # Introduction to Python
 
+> #### Info
+> 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 Let's write some code!
 
 ## Python prompt
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> #### Info::For readers at home
+> 
+> This part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
 To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
@@ -155,7 +159,9 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
 - The `str` function converts things into __strings__
 - The `int` function converts things into __integers__
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> #### Info::Important
+> 
+> we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
 
 ## Variables
 
@@ -334,7 +340,9 @@ You can find a list of all available list methods in this chapter of the Python 
 
 ## Dictionaries
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> #### Info::For readers at home
+> 
+> This part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
 
 A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
 
@@ -438,7 +446,9 @@ Excited for the next part? :)
 
 ## Compare things
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> #### Info::For readers at home
+> 
+> This part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
 
 A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
 
@@ -546,7 +556,9 @@ Congrats! Booleans are one of the coolest features in programming, and you just 
 
 # Save it!
 
-> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+> #### Info::For readers at home
+> 
+> This part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
 
 
 So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language __interpreter__ or __compiler__. So far we've been running our programs one line at a time in the Python __interpreter__. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
@@ -577,10 +589,15 @@ Obviously, you're a pretty seasoned Python developer now, so feel free to write 
 
 Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in __.py__. The __.py__ extension tells our operating system that this is a **Python executable file** and Python can run it.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+> #### Note
+> 
+> You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
 
 
 With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+
+<!--sec data-title="OS X" data-id="python_OSX"
+data-collapse=true ces-->
 
 On a Mac, the command will look something like this:
 
@@ -588,6 +605,10 @@ On a Mac, the command will look something like this:
 ```
 $ cd ~/Desktop
 ```
+<!--endsec-->
+
+<!--sec data-title="Linux" data-id="python_linux"
+data-collapse=true ces-->
 
 On Linux, it will be like this (the word "Desktop" might be translated to your local language):
 
@@ -596,12 +617,17 @@ On Linux, it will be like this (the word "Desktop" might be translated to your l
 $ cd ~/Desktop
 ```
 
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
+
 And on Windows, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 ```
 > cd %HomePath%\Desktop
 ```
+<!--endsec-->
 
 If you get stuck, just ask for help.
 
@@ -663,7 +689,9 @@ $ python3 python_intro.py
 It works!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+> #### Note
+> 
+> Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
 
 ### What if a condition isn't True?
 
@@ -766,7 +794,9 @@ Time for the last part of this chapter!
 
 ## Your own functions!
 
-> For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
+> #### Info::For readers at home
+> 
+> This part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
 
 Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
@@ -895,7 +925,9 @@ Congratulations! You just learned how to write functions! :)
 
 ## Loops
 
-> For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
+> #### Info::For readers at home
+> 
+> This part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
 
 This is the last part already. That was quick, right? :)
 
