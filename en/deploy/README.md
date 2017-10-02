@@ -1,8 +1,6 @@
 # Deploy!
 
-> #### Note
-> 
-> The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
 
 Until now, your website was only available on your computer.  Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
 
@@ -14,9 +12,7 @@ These three places will be important to you.  Your local computer will be the pl
 
 # Git
 
-> #### Note
-> 
-> If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
 {% include "/deploy/install_git.md" %}
 
@@ -24,9 +20,7 @@ These three places will be important to you.  Your local computer will be the pl
 
 Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
 
-> #### Note 
-> 
-> Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
+> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -53,15 +47,9 @@ db.sqlite3
 
 And save it as `.gitignore` in the "djangogirls" folder.
 
-> #### Note
-> 
-> The dot at the beginning of the file name is important!  If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **Note** The dot at the beginning of the file name is important!  If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
 
-&nbsp;
-
-> #### Note
-> 
-> One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all or your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database.  That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+> **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all or your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database.  That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
 It's a good idea to use a `git status` command before `git add` or whenever you find yourself unsure of what has changed. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
@@ -105,9 +93,7 @@ Then, create a new repository, giving it the name "my-first-blog". Leave the "in
 
 <img src="images/new_github_repo.png" />
 
-> #### Note
-> 
-> The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
 
 On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
 
@@ -144,9 +130,7 @@ Your code is now on GitHub. Go and check it out!  You'll find it's in fine compa
 
 # Setting up our blog on PythonAnywhere
 
-> #### Note
-> 
-> You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
@@ -155,9 +139,7 @@ Your code is now on GitHub. Go and check it out!  You'll find it's in fine compa
 
 When you've signed up for PythonAnywhere, you'll be taken to your dashboard or "Consoles" page. Choose the option to start a "Bash" console – that's the PythonAnywhere version of a console, just like the one on your computer.
 
-> #### Note
-> 
-> PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+> **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 
 Let's pull down our code from GitHub and onto PythonAnywhere by creating a "clone" of our repo. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
 
@@ -212,9 +194,7 @@ Successfully installed django-1.10.4
 ```
 
 
-> #### Note
-> 
-> The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than five minutes, something is wrong.  Ask your coach.
+> **Note** The `pip install` step can take a couple of minutes.  Patience, patience!  But if it takes more than five minutes, something is wrong.  Ask your coach.
 
 <!--TODO: think about using requirements.txt instead of pip install.-->
 
@@ -241,9 +221,7 @@ Click back to the PythonAnywhere dashboard by clicking on its logo, and then cli
 
 After confirming your domain name, choose **manual configuration** (N.B. – *not* the "Django" option) in the dialog. Next choose **Python 3.5**, and click Next to finish the wizard.
 
-> #### Note
-> 
-> Make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup. ;-)
+> **Note** Make sure you choose the "Manual configuration" option, not the "Django" one. We're too cool for the default PythonAnywhere Django setup. ;-)
 
 
 ### Setting the virtualenv
@@ -254,9 +232,7 @@ You'll be taken to the PythonAnywhere config screen for your webapp, which is wh
 
 In the "Virtualenv" section, click the red text that says "Enter the path to a virtualenv", and enter `/home/<your-PythonAnywhere-username>/my-first-blog/myvenv/`. Click the blue box with the checkmark to save the path before moving on.
 
-> #### Note
-> 
-> Substitute your own PythonAnywhere username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
+> **Note** Substitute your own PythonAnywhere username as appropriate. If you make a mistake, PythonAnywhere will show you a little warning.
 
 
 ### Configuring the WSGI file
@@ -283,15 +259,8 @@ from django.contrib.staticfiles.handlers import StaticFilesHandler
 application = StaticFilesHandler(get_wsgi_application())
 ```
 
-> #### Note
-> 
-> Don't forget to substitute in your own PythonAnywhere username where it says `<your-PythonAnywhere-username>`.
-
-&nbsp;
-
-> #### Note
-> 
-> In line four, we make sure Python anywhere knows how to find our application. It is very important that this path name is correct, and especially that there are no extra spaces here. Otherwise you will see an "ImportError" in the error log.
+> **Note** Don't forget to substitute in your own PythonAnywhere username where it says `<your-PythonAnywhere-username>`.
+> **Note** In line four, we make sure Python anywhere knows how to find our application. It is very important that this path name is correct, and especially that there are no extra spaces here. Otherwise you will see an "ImportError" in the error log.
 
 This file's job is to tell PythonAnywhere where our web app lives and what the Django settings file's name is.
 

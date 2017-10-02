@@ -137,8 +137,6 @@ class Post(models.Model):
         return self.title
 ```
 
-> #### Note
-> 
 > Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
 
 It looks scary, right? But don't worry – we will explain what these lines mean!

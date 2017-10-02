@@ -1,9 +1,7 @@
 # Your first Django project!
 
-> #### Info
-> 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
-> 
+
 > Parts of this chapter are based on the [django-marcador
 tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons
 Attribution-ShareAlike 4.0 International License. The django-marcador tutorial
@@ -15,9 +13,7 @@ The first step is to start a new Django project. Basically, this means that we'l
 
 The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
 
-> #### Note
-> 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the [Django installation](../django_installation) chapter in the __Working with virtualenv__ part. Typing `myvenv\Scripts\activate` on Windows or
+> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the __Django installation__ chapter in the __Working with virtualenv__ part. Typing `myvenv\Scripts\activate` on Windows or
 `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
 <!--sec data-title="OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
@@ -29,15 +25,9 @@ In your Mac OS X or Linux console, you should run the following command. **Don't
 (myvenv) ~/djangogirls$ django-admin startproject mysite .
 ```
 
-> #### Note
-> 
 > The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
 
-&nbsp;
-
-> #### Note
-> 
-> When typing the command above, remember that you only type the part which starts by `django-admin`.
+> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`.
 The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 <!--endsec-->
@@ -50,16 +40,10 @@ On Windows you should run the following command. **(Don't forget to add the peri
 ```
 (myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
 ```
-> #### Note
-> 
 > The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
 
-&nbsp;
-
-> #### Note
-> 
-> When typing the command above, remember that you only type the part which starts by `django-admin.py`.
-The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.py`.
+The (myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 <!--endsec-->
 
@@ -74,9 +58,7 @@ djangogirls
         wsgi.py
         __init__.py
 ```
-> #### Note
-> 
-> in your directory structure, you will also see your `venv` directory that we created before.
+> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
 
 `manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
 
@@ -116,9 +98,7 @@ match our hostname on PythonAnywhere once we deploy our application so we will c
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> #### Note
-> 
-> If you're using a Chromebook, add this line at the bottom of your settings.py file:
+> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file:
 > `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 
 ## Set up a database
@@ -206,9 +186,7 @@ Congratulations! You've just created your first website and run it using a web s
 
 While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
 
-> #### Info
-> 
-> We reviewed how web servers work in the [How the Internet works](../how_the_internet_works/README.md) chapter.
+> We reviewed how web servers work in the <b>How the Internet works</b> chapter.
 
 To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C buttons together (on Windows, you might have to press Ctrl+Break).
 

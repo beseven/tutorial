@@ -136,9 +136,7 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 [<Post: Sample title>, <Post: 4th title of post>]
 ```
 
-> #### Note
-> 
-> There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
 
 You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
 
