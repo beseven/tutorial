@@ -228,4 +228,21 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
+<!--sec data-title="OS X" data-id="django_err_osx"
+data-collapse=true ces-->
+
+> #### Note
+> 
+> If you get an error when calling pip on OSX, e.g.
+>{% filename %}command-line{% endfilename %}
+>```
+>pip install django~=1.10.0
+>Collecting django~=1.10.0
+>  Could not find a version that satisfies the requirement django~=1.10.0 (from versions: )
+>No matching distribution found for django~=1.10.0
+>```
+make sure that pip is properly installed on your machine by following [this tutorial](https://pip.pypa.io/en/stable/installing/#installing-with-get-pip-py) and then running the Django installation command again.
+
+<!--endsec-->
+
 That's it! You're now (finally) ready to create a Django application!
